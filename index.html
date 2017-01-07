@@ -171,14 +171,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Hexo-Github写博客"><a href="#Hexo-Github写博客" class="headerlink" title="Hexo+Github写博客"></a>Hexo+Github写博客</h1><p>###<strong>一、首先建立一个工程文件夹，在该文件夹下打开命令窗口</strong></p>
-<h4 id="1-使用npm安装hexo"><a href="#1-使用npm安装hexo" class="headerlink" title="1.使用npm安装hexo"></a>1.使用npm安装hexo</h4><p><code>npm install -g hexo</code> </p>
-<h4 id="2-初始化hexo"><a href="#2-初始化hexo" class="headerlink" title="2.初始化hexo"></a>2.初始化hexo</h4><p><code>hexo init blog</code><br><code>npm install</code></p>
-<h4 id="3-生成静态页面"><a href="#3-生成静态页面" class="headerlink" title="3.生成静态页面"></a>3.生成静态页面</h4><p><code>hexo generate</code></p>
-<h4 id="4-启动本地服务，进行文章预览调试"><a href="#4-启动本地服务，进行文章预览调试" class="headerlink" title="4.启动本地服务，进行文章预览调试"></a>4.启动本地服务，进行文章预览调试</h4><p><code>hexo serve</code><br><code>ctrl+c退出服务</code></p>
-<h4 id="5-github上新建一个仓库"><a href="#5-github上新建一个仓库" class="headerlink" title="5.github上新建一个仓库"></a>5.github上新建一个仓库</h4><h4 id="6-修改-config-yml文件（root-blog-）"><a href="#6-修改-config-yml文件（root-blog-）" class="headerlink" title="6.修改_config.yml文件（root:/blog/）"></a>6.修改_config.yml文件（root:/blog/）</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">deploy:</span></div><div class="line">	type：git</div><div class="line">	repository：***********（写github中的仓库中的settings中的路径</div><div class="line">	branch：gh-pages</div></pre></td></tr></table></figure>
-<h4 id="7-下载安装hexo-deployer-git"><a href="#7-下载安装hexo-deployer-git" class="headerlink" title="7.下载安装hexo-deployer-git"></a>7.下载安装hexo-deployer-git</h4><p><code>npm install hexo-deployer-git --save</code></p>
-<h4 id="8发布到github"><a href="#8发布到github" class="headerlink" title="8发布到github"></a>8发布到github</h4><p><code>hexo deploy --generate</code></p>
+        <h1 id="Hexo-Github写博客"><a href="#Hexo-Github写博客" class="headerlink" title="Hexo+Github写博客"></a>Hexo+Github写博客</h1><h3 id="一、首先建立一个工程文件夹，在该文件夹下打开命令窗口"><a href="#一、首先建立一个工程文件夹，在该文件夹下打开命令窗口" class="headerlink" title=" 一、首先建立一个工程文件夹，在该文件夹下打开命令窗口 "></a><strong> 一、首先建立一个工程文件夹，在该文件夹下打开命令窗口 </strong></h3><h4 id="1-使用npm安装hexo"><a href="#1-使用npm安装hexo" class="headerlink" title="1. 使用npm安装hexo"></a>1. 使用npm安装hexo</h4><p><code>npm install -g hexo</code> </p>
+<h4 id="2-初始化hexo"><a href="#2-初始化hexo" class="headerlink" title="2. 初始化hexo"></a>2. 初始化hexo</h4><p><code>hexo init blog</code><br><code>npm install</code></p>
+<h4 id="3-生成静态页面"><a href="#3-生成静态页面" class="headerlink" title="3. 生成静态页面"></a>3. 生成静态页面</h4><p><code>hexo generate</code></p>
+<h4 id="4-启动本地服务，进行文章预览调试"><a href="#4-启动本地服务，进行文章预览调试" class="headerlink" title="4. 启动本地服务，进行文章预览调试"></a>4. 启动本地服务，进行文章预览调试</h4><p><code>hexo serve</code><br><code>ctrl+c退出服务</code></p>
+<h4 id="5-github上新建一个仓库"><a href="#5-github上新建一个仓库" class="headerlink" title="5. github上新建一个仓库"></a>5. github上新建一个仓库</h4><h4 id="6-修改-config-yml文件（root-blog-）"><a href="#6-修改-config-yml文件（root-blog-）" class="headerlink" title="6. 修改_config.yml文件（root:/blog/）"></a>6. 修改_config.yml文件（root:/blog/）</h4><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">deploy:</span></div><div class="line">	type：git</div><div class="line">	repository：***********（写github中的仓库中的settings中的路径</div><div class="line">	branch：gh-pages</div></pre></td></tr></table></figure>
+<h4 id="7-下载安装hexo-deployer-git"><a href="#7-下载安装hexo-deployer-git" class="headerlink" title="7. 下载安装hexo-deployer-git"></a>7. 下载安装hexo-deployer-git</h4><p><code>npm install hexo-deployer-git --save</code></p>
+<h4 id="8-发布到github"><a href="#8-发布到github" class="headerlink" title="8. 发布到github"></a>8. 发布到github</h4><p><code>hexo deploy --generate</code></p>
 <p><strong><em>注意：重新发布</em></strong><br><code>hexo clean</code><br><code>hexo deployer --generate</code>或者<code>hexo d g</code></p>
 <h3 id="二、更改hexo主题"><a href="#二、更改hexo主题" class="headerlink" title="二、更改hexo主题"></a><strong>二、更改hexo主题</strong></h3><blockquote>
 <p>在github上搜索hexo theme，选择一个主题，按照上面的教程更改主题</p>
